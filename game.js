@@ -6,12 +6,12 @@
 
 // Global Variables
 
-var wins = ["3"];
-var losses =["3"] ;
-var guessesLeft = ["3"];
-var guessesSoFar = ["0"];
-var randomLetter = ["any letter"};
-var userGuess = ["any letter"];
+var wins = 0;
+var losses = 0 ;
+var guessesLeft = 9;
+var guessesSoFar = [];
+var randomLetter = "";
+var userGuess = "";
 var letters = ["a", "b", "c", "d", "e","f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
 console.log(letters[0])
@@ -19,11 +19,15 @@ console.log(letters[0])
     // Functions
 var randomLetter = function( ) {
         
-    var letters = ("a", "b", "c", "d", "e","f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z");
-
     var letter = letters[Math.floor(Math.random() *letters.length)];
 
     return letter
+}
+
+var userGuess = function( ){
+
+    var userGuess = letters[Math.floor(Math.random() *letters.length)];
+
 }
 
 ('#letter').html('letter')
@@ -46,7 +50,7 @@ var randomLetter = function( ) {
 
     if
 
-    then 
+    if
 
 // }
 // else{
@@ -56,6 +60,7 @@ var randomLetter = function( ) {
 
     else
 
+    else
 
 // Click/Input Functions
 // Get input from user: what key was pressed
